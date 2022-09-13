@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+body {
+    background-image: url(/blackblock.avif);
+}
+.game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: rgb(25, 52, 78);
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: rgb(29, 137, 149);
+    position:relative;
+    top: 150px;
+}
+.animate{
+    animation: jump .3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block {
+    background-color: rgb(253, 11, 11);  
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+h1 {
+    text-align: center;
+    color: rgb(255, 7, 7);
+    text-shadow: 1px 1px 2px rgb(157, 88, 70), 0 0 25px rgb(206, 109, 109), 0 0 5px rgba(19, 19, 209, 0.619);
+    font-size: xx-large;
+
+}
+p{
+    text-align: center;
+    color: rgb(255, 7, 7);
+    text-shadow: 1px 1px 2px rgb(157, 88, 70), 0 0 25px rgb(206, 109, 109), 0 0 5px rgba(19, 19, 209, 0.619);
+    font-size: xx-large;
+}
